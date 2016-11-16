@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Odontología</string>
+    <string name="action_settings">Portal UNAM</string>
+    <string name="action_acerca">Acerda de</string>
+    <string name="action_datos">Generar PDF</string>
+
+    <string name="periodontosis">Longitud de la Periodontosis - Milimetros</string>
+    <string name="transparencia">Longitud de la Transparencia - Milimetros</string>
+    <string name="raiz">Longitud de la Raiz - Milimetros</string>
+
+    <string name="IndiceCorona">Indice de la Corona Dental - Milimetros</string>
+    <string name="Alturacoronal">Altura Coronal - Milimetros</string>
+    <string name="AlturaPulpar">Altura de la Cavidad Pulpar Coronal - Milimetros</string>
+</resources>
