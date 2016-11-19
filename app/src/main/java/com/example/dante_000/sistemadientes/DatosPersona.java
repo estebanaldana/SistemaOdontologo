@@ -1,7 +1,6 @@
 package com.example.dante_000.sistemadientes;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.content.DialogInterface;
@@ -16,9 +15,27 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.PageSize;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.ColumnText;
+import com.itextpdf.text.Font;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
 
-
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URL;
 import java.text.DecimalFormat;
 
 //import xyz.hanks.library.SmallBang;
@@ -28,6 +45,7 @@ public class DatosPersona extends AppCompatActivity {
 
     TextView edad, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16;
     double ed, ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11, ed12, ed13, ed14, ed15, ed16;
+
 
     ClassDientes CD = new ClassDientes();
     DecimalFormat decimales = new DecimalFormat("0.00");
@@ -366,7 +384,7 @@ public class DatosPersona extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item){
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -374,19 +392,86 @@ public class DatosPersona extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_datos) {
-            return true;
+
+            Document Doc = new Document(PageSize.LETTER,20,20,200,100);
+            String outpatch = Environment.getExternalStorageDirectory()+"/DatosOdontologia.pdf";
+            PdfPTable table = new PdfPTable(4);
+            try {
+                PdfWriter.getInstance(Doc, new FileOutputStream(outpatch));
+                PdfWriter writer = PdfWriter.getInstance(Doc, new FileOutputStream(outpatch));
+                Font fuente = new Font();
+                Font fuente1 = new Font();
+                Font fuente2 = new Font();
+                PdfPCell celda;
+
+                Doc.open();
+
+                fuente.setSize(10);
+                fuente.setStyle(Font.BOLD);
+                fuente.setFamily(Font.FontFamily.HELVETICA.toString());
+                fuente1.setSize(40);
+                fuente1.setStyle(Font.BOLD);
+                fuente1.setFamily(Font.FontFamily.TIMES_ROMAN.toString());
+                fuente2.setSize(15);
+                fuente2.setStyle(Font.ITALIC);
+                fuente2.setFamily(Font.FontFamily.TIMES_ROMAN.toString());
+
+
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Univerdad Nacional Autonoma de México",fuente), 150,750,0);
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Odontología",fuente), 500,750,0);
+
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase(edad.getText().toString(),fuente1), 200,630,0);
+
+
+                table.getDefaultCell().setBorder(Rectangle.BOTTOM);
+
+
+                table.addCell("Canino Superior");
+                table.addCell("Primer Molar Superior");
+                table.addCell("Canino Inferior");
+                table.addCell("Primer Molar Inferior");
+
+                table.addCell(d1.getText().toString());
+                table.addCell(d5.getText().toString());
+                table.addCell(d9.getText().toString());
+                table.addCell(d13.getText().toString());
+
+                table.addCell(d2.getText().toString());
+                table.addCell(d6.getText().toString());
+                table.addCell(d10.getText().toString());
+                table.addCell(d14.getText().toString());
+
+                table.addCell(d3.getText().toString());
+                table.addCell(d7.getText().toString());
+                table.addCell(d11.getText().toString());
+                table.addCell(d15.getText().toString());
+
+                table.addCell(d4.getText().toString());
+                table.addCell(d8.getText().toString());
+                table.addCell(d12.getText().toString());
+                table.addCell(d16.getText().toString());
+
+                table.setHorizontalAlignment(Element.ALIGN_CENTER);
+
+                Doc.add(table);
+
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase(Mensaje,fuente2), 300,430,0);
+
+
+                Doc.close();
+            }
+            catch (DocumentException e){
+                e.printStackTrace();
+            }
+            catch (FileNotFoundException e){
+                e.printStackTrace();
+            }
+            catch (IOException e){
+                Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
+            }
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    public void PDF(View v) {
-        try {
-            Toast.makeText(this, "Aun en Mantenimiento Crear Documento PDF",
-                    Toast.LENGTH_LONG).show();
-        } catch (Exception e) {
-            Toast.makeText(this, "Aun en Mantenimiento",
-                    Toast.LENGTH_LONG).show();
-        }
     }
-}
