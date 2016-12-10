@@ -182,7 +182,7 @@ public class Ikeda extends AppCompatActivity{
 
                 TextView res = new TextView(Ikeda.this);
 
-                if (ch < 20) {
+                if (ch < 100) {
                     edad = (77.617 - (1.4636 * ch));
 
                     res.setText(""+edad);
@@ -225,7 +225,7 @@ public class Ikeda extends AppCompatActivity{
                 Bundle op = new Bundle();
 
                 TextView res = new TextView(Ikeda.this);
-                if (ch < 20 && cpch < 20) {
+                if (ch < 100 && cpch < 100) {
                     TCI = ((cpch * 100) / ch);
                     edad = (77.617 - (1.4636 * TCI));
 

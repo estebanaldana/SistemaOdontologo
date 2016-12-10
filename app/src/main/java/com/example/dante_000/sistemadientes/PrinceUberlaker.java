@@ -186,9 +186,9 @@ public class PrinceUberlaker extends AppCompatActivity{
 
                 TextView res = new TextView(PrinceUberlaker.this);
 
-                if (p < 15 && t < 15 && lr < 100)
+                if (p < 100 && t < 100 && lr < 100)
                 {
-                    edad = ((0.15*lr)+(0.29*p)+(0.39*t))+23.17;
+                    edad = ((0.15*lr)+(0.29*((p * 100)/lr))+(0.39*((t*100)/lr)))+23.17;
 
                     res.setText(""+edad);
 
@@ -222,9 +222,9 @@ public class PrinceUberlaker extends AppCompatActivity{
 
                 TextView res = new TextView(PrinceUberlaker.this);
 
-                if (p < 20 && t < 20 && lr < 20)
+                if (p < 100 && t < 100 && lr < 20)
                 {
-                    edad = ((1.10*lr)+(0.35*p)+(0.39*t))+11.82;
+                    edad = ((1.10*lr)+(0.31*((p * 100)/lr))+(0.39*((t * 100)/lr)))+11.82;
 
                     res.setText(""+edad);
 

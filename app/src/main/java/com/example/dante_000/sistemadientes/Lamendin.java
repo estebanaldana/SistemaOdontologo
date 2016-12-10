@@ -123,8 +123,8 @@ public class Lamendin extends AppCompatActivity {
 
             TextView res = new TextView(Lamendin.this);
 
-            if (p < 15 && t < 15&& lr < 100) {
-                edad = ((((p * 100) / lr) * 0.18) + (((t * 100) / lr) * 0.42) + 25.53);
+            if (p < 100 && t < 100&& lr < 100) {
+                edad = ((0.18 *((p * 100)/lr )) + (0.42 *((t * 100)/lr)) + 25.23);
 
                 res.setText(""+edad);
 

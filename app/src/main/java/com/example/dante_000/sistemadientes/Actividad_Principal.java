@@ -52,7 +52,7 @@ public class Actividad_Principal extends AppCompatActivity {
         if (id == R.id.action_acerca_de) {
 
             Mensaje = "Proyecto realizado por Esteban Aldana Hernandez | Isaac Francisco López Martínez \n" +"En Estadía de investigación  en la Facultad de Medicina UNAM \n"
-            +"Asesor: Dr. Eduardo Vázquez Santa Cruz \n" +"Colaboradora: Dra. Ivet Gil-Chavarría ";
+            +"Asesor: Dr. Eduardo Vázquez Santacruz Catédratico CONACYT-UNAM \n" +"Colaboradora: Dra. Ivet Gil Chavarría Catédratico CONACYT-UNAM  ";
             Titulo = "Acerca de...";
             Aceptar = "Regresar";
 

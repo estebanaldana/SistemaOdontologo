@@ -61,24 +61,24 @@ public class Dientes extends AppCompatActivity {
     private String Mensaje;
     private String Titulo;
     private String Aceptar;
-    String Datos[] = {"Dientes", "CanSup, CanInf, PimMolSup, PimMolInf",
+    String Datos[] = {"Dientes", "13-23, 33-43, 16-26, 36-46",
 
-            "CanSup, CanInf, PimMolSup",
-            "CanSup, CanInf, PimMolInf",
-            "CanSup, PimMolSup, PimMolInf",
-            "CanInf, PimMolSup, PimMolInf",
+            "13-43, 33-43, 16-26",
+            "13-23, 33-43, 36-46",
+            "13-23, 16-26, 36-46",
+            "33-43, 16-26, 36-46",
 
-            "CanSup, CanInf",
-            "CanSup, PimMolSup",
-            "CanSup, PimMolInf",
-            "CanInf, PimMolSup",
-            "CanInf, PimMolInf",
-            "PimMolSup, PimMolInf",
+            "13-23, 33-43",
+            "13-23, 16-26",
+            "13-23, 33-43",
+            "33-43, 16-26",
+            "33-43, 36-46",
+            "16-26, 36-46",
 
-            "CanSup",
-            "CanInf",
-            "PimMolSup",
-            "PimMolInf",
+            "13-23",
+            "33-43",
+            "16-26",
+            "36-46",
     };
 
     FloatingActionButton menu, info, portal;
