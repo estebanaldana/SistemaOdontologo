@@ -24,7 +24,10 @@
         <activity android:name=".PrinceUberlaker" android:label="Metodo Prince y Uberlaker"></activity>
         <activity android:name=".Ikeda" android:label="Metodo Ikeda"></activity>
         <activity android:name=".Dientes" android:label="Dientes"></activity>
-        <activity android:name=".DatosPersona" android:label="Datos"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+        <activity android:name=".DatosPersona" android:label="Datos"></activity>
+        <activity android:name=".DatosPersonaEdad" android:label="Datos"></activity>
+        <activity android:name=".DatosPersonaEdadPU" android:label="Datos"></activity>
+        <activity android:name=".DatosPersonaEdadI" android:label="Datos"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
             android:name="com.google.android.gms.version"

@@ -7,21 +7,19 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
-import com.itextpdf.text.Image;
 import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.Rectangle;
@@ -33,9 +31,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.text.DecimalFormat;
 
 //import xyz.hanks.library.SmallBang;
@@ -45,6 +41,9 @@ public class DatosPersona extends AppCompatActivity {
 
     TextView edad, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16;
     double ed, ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11, ed12, ed13, ed14, ed15, ed16;
+
+    DatePicker tiempo;
+    TextView fecha;
 
 
     ClassDientes CD = new ClassDientes();
@@ -70,6 +69,8 @@ public class DatosPersona extends AppCompatActivity {
         setContentView(R.layout.activity_datos);
 
 
+
+
         edad = (TextView) findViewById(R.id.Edad);
         d1 = (TextView) findViewById(R.id.D1);
         d2 = (TextView) findViewById(R.id.D2);
@@ -87,6 +88,19 @@ public class DatosPersona extends AppCompatActivity {
         d14 = (TextView) findViewById(R.id.D14);
         d15 = (TextView) findViewById(R.id.D15);
         d16 = (TextView) findViewById(R.id.D16);
+
+        tiempo = new DatePicker(this);
+        fecha = new TextView(this);
+        int dia;
+        int mes;
+        int anos;
+
+        dia = tiempo.getDayOfMonth();
+        mes = tiempo.getMonth();
+        anos = tiempo.getYear();
+
+        fecha.setText(dia+"/"+ mes+"/"+anos);
+
 
         try {
             Bundle datoR = this.getIntent().getExtras();
@@ -169,10 +183,6 @@ public class DatosPersona extends AppCompatActivity {
 
         } catch (Exception e) {
 
-            Intent i = new Intent(this, Actividad_Principal.class);
-            startActivity(i);
-            finish();
-
             Mensaje = "A Ocurrido un Error Porfavor Vuelve a Ingresar los Datos";
             Titulo = "Error";
             Aceptar = "Aceptar";
@@ -181,6 +191,7 @@ public class DatosPersona extends AppCompatActivity {
             builder1.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int id) {
+                    finish();
                     dialog.cancel();
                 }
             });
@@ -402,7 +413,6 @@ public class DatosPersona extends AppCompatActivity {
                 Font fuente = new Font();
                 Font fuente1 = new Font();
                 Font fuente2 = new Font();
-                PdfPCell celda;
 
                 Doc.open();
 
@@ -457,8 +467,11 @@ public class DatosPersona extends AppCompatActivity {
 
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase(Mensaje,fuente2), 300,430,0);
 
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase(fecha.getText().toString(),fuente2), 100,230,0);
 
                 Doc.close();
+
+                Toast.makeText(this, "Se genero el Formato PDF con exito su ubicacion es: " +outpatch, Toast.LENGTH_SHORT).show();
             }
             catch (DocumentException e){
                 e.printStackTrace();

@@ -42,6 +42,7 @@ public class Ikeda extends AppCompatActivity{
     private String Mensaje;
     private String Titulo;
     private String Aceptar;
+    private String Cancelar;
 
     FloatingActionButton menu, info, portal;
     Animation Fopen, FCloc, FRot, FRotan;
@@ -174,90 +175,184 @@ public class Ikeda extends AppCompatActivity{
 
     public void boton (View v) {
 
-        try {
-            double ch = Double.parseDouble(CH.getText().toString());
-            if (lista.getSelectedItemPosition() == 1) {
+        Titulo = "Procedimiento";
+        Aceptar = "Aceptar";
+        Cancelar = "Cancelar";
+        Mensaje = "Deseas estimar el sexo o no";
 
-                Bundle op = new Bundle();
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false)
 
-                TextView res = new TextView(Ikeda.this);
+                .setPositiveButton(Aceptar, new DialogInterface.OnClickListener() {
 
-                if (ch < 100) {
-                    edad = (77.617 - (1.4636 * ch));
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        try {
+                            double ch = Double.parseDouble(CH.getText().toString());
+                            if (lista.getSelectedItemPosition() == 1) {
 
-                    res.setText(""+edad);
+                                Bundle op = new Bundle();
 
-                    op.putString("edad",  res.getText().toString());
-                    Intent i = new Intent(this, Dientes.class);
-                    i.putExtras(op);
-                    startActivity(i);
-                    finish();
-                } else {
-                    Mensaje = "La longitud de Entrada no es correcta";
-                    Titulo = "Longitud Demaciado Grande";
-                    Aceptar = "Regresar";
+                                TextView res = new TextView(Ikeda.this);
 
-                    final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
+                                if (ch < 100) {
+                                    edad = (77.617 - (1.4636 * ch));
+
+                                    res.setText("" + edad);
+
+                                    op.putString("edad", res.getText().toString());
+                                    Intent i = new Intent(Ikeda.this, Dientes.class);
+                                    i.putExtras(op);
+                                    startActivity(i);
+                                    finish();
+                                } else {
+                                    Mensaje = "La longitud de Entrada no es correcta";
+                                    Titulo = "Longitud Demaciado Grande";
+                                    Aceptar = "Regresar";
+
+                                    final AlertDialog.Builder builder = new AlertDialog.Builder(Ikeda.this);
+                                    builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            dialog.cancel();
+                                        }
+                                    });
+                                    AlertDialog alert = builder.create();
+                                    alert.show();
+                                    return;
+                                }
+                            }
+                        } catch (Exception ei) {
+                            Toast.makeText(Ikeda.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
                         }
-                    });
-                    AlertDialog alert = builder.create();
-                    alert.show();
-                    return;
-                }
-            }
-        }
-            catch (Exception ei)
-            {
-                Toast.makeText(this, "Debes de Llenar Todos los Campos",
-                        Toast.LENGTH_LONG).show();
-            }
 
-            try
-            {
+                        try {
 
-            double ch = Double.parseDouble(CH.getText().toString());
-            double cpch = Double.parseDouble(CPCH.getText().toString());
-            if (lista.getSelectedItemPosition() == 2) {
-                Bundle op = new Bundle();
+                            double ch = Double.parseDouble(CH.getText().toString());
+                            double cpch = Double.parseDouble(CPCH.getText().toString());
+                            if (lista.getSelectedItemPosition() == 2) {
+                                Bundle op = new Bundle();
 
-                TextView res = new TextView(Ikeda.this);
-                if (ch < 100 && cpch < 100) {
-                    TCI = ((cpch * 100) / ch);
-                    edad = (77.617 - (1.4636 * TCI));
+                                TextView res = new TextView(Ikeda.this);
+                                if (ch < 100 && cpch < 100) {
+                                    TCI = ((cpch * 100) / ch);
+                                    edad = (77.617 - (1.4636 * TCI));
 
-                    res.setText(""+edad);
+                                    res.setText("" + edad);
 
-                    op.putString("edad",  res.getText().toString());
-                    Intent i = new Intent(this, Dientes.class);
-                    i.putExtras(op);
-                    startActivity(i);
-                    finish();
-                } else {
-                    Mensaje = "La lomgitud de Entrada no es correcta";
-                    Titulo = "Longitud Demaciado Grande";
-                    Aceptar = "Regresar";
+                                    op.putString("edad", res.getText().toString());
+                                    Intent i = new Intent(Ikeda.this, Dientes.class);
+                                    i.putExtras(op);
+                                    startActivity(i);
+                                    finish();
+                                } else {
+                                    Mensaje = "La lomgitud de Entrada no es correcta";
+                                    Titulo = "Longitud Demaciado Grande";
+                                    Aceptar = "Regresar";
 
-                    final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
+                                    final AlertDialog.Builder builder = new AlertDialog.Builder(Ikeda.this);
+                                    builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            dialog.cancel();
+                                        }
+                                    });
+                                    AlertDialog alert = builder.create();
+                                    alert.show();
+                                    return;
+                                }
+                            }
+                        } catch (Exception e) {
+                            Toast.makeText(Ikeda.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
                         }
-                    });
-                    AlertDialog alert = builder.create();
-                    alert.show();
-                    return;
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Toast.makeText(this, "Debes de Llenar Todos los Campos",
-                    Toast.LENGTH_LONG).show();
-        }
-    }
+                    }
+                    })
+                            .setNegativeButton(Cancelar, new DialogInterface.OnClickListener(){
+                        @Override
+                        public void onClick(DialogInterface dialog, int id){
+                            try {
+                                double ch = Double.parseDouble(CH.getText().toString());
+                                if (lista.getSelectedItemPosition() == 1) {
+
+                                    Bundle op = new Bundle();
+
+                                    TextView res = new TextView(Ikeda.this);
+
+                                    if (ch < 100) {
+                                        edad = (77.617 - (1.4636 * ch));
+
+                                        res.setText("" + edad);
+
+                                        op.putString("edadE", res.getText().toString());
+                                        Intent i = new Intent(Ikeda.this, DatosPersonaEdadI.class);
+                                        i.putExtras(op);
+                                        startActivity(i);
+                                        finish();
+                                    } else {
+                                        Mensaje = "La longitud de Entrada no es correcta";
+                                        Titulo = "Longitud Demaciado Grande";
+                                        Aceptar = "Regresar";
+
+                                        final AlertDialog.Builder builder = new AlertDialog.Builder(Ikeda.this);
+                                        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int id) {
+                                                dialog.cancel();
+                                            }
+                                        });
+                                        AlertDialog alert = builder.create();
+                                        alert.show();
+                                        return;
+                                    }
+                                }
+                            } catch (Exception ei) {
+                                Toast.makeText(Ikeda.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
+                            }
+
+                            try {
+
+                                double ch = Double.parseDouble(CH.getText().toString());
+                                double cpch = Double.parseDouble(CPCH.getText().toString());
+                                if (lista.getSelectedItemPosition() == 2) {
+                                    Bundle op = new Bundle();
+
+                                    TextView res = new TextView(Ikeda.this);
+                                    if (ch < 100 && cpch < 100) {
+                                        TCI = ((cpch * 100) / ch);
+                                        edad = (77.617 - (1.4636 * TCI));
+
+                                        res.setText("" + edad);
+
+                                        op.putString("edadE", res.getText().toString());
+                                        Intent i = new Intent(Ikeda.this, DatosPersonaEdadI.class);
+                                        i.putExtras(op);
+                                        startActivity(i);
+                                        finish();
+                                    } else {
+                                        Mensaje = "La lomgitud de Entrada no es correcta";
+                                        Titulo = "Longitud Demaciado Grande";
+                                        Aceptar = "Regresar";
+
+                                        final AlertDialog.Builder builder = new AlertDialog.Builder(Ikeda.this);
+                                        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int id) {
+                                                dialog.cancel();
+                                            }
+                                        });
+                                        AlertDialog alert = builder.create();
+                                        alert.show();
+                                        return;
+                                    }
+                                }
+                            } catch (Exception e) {
+                                Toast.makeText(Ikeda.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
+                            }
+                        }
+                        });
+                        AlertDialog alert = builder.create();
+                        alert.show();
+                        return;
+
+                        }
 }

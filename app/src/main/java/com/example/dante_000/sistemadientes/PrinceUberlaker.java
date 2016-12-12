@@ -29,6 +29,8 @@ public class PrinceUberlaker extends AppCompatActivity{
     EditText T;
     EditText Lr;
 
+    TextView sexo;
+
     ImageView ima;
 
     Button cal;
@@ -38,6 +40,8 @@ public class PrinceUberlaker extends AppCompatActivity{
 
     double edad;
     DecimalFormat decimales = new DecimalFormat("0.00");
+
+
 
     private String Mensaje;
     private String Titulo;
@@ -61,6 +65,7 @@ public class PrinceUberlaker extends AppCompatActivity{
 
         ima = (ImageView) findViewById(R.id.ima);
 
+        sexo = new TextView(this);
 
 
         lista = (Spinner) findViewById(R.id.lista);
@@ -182,6 +187,7 @@ public class PrinceUberlaker extends AppCompatActivity{
 
             if(lista.getSelectedItemPosition() == 1)
             {
+
                 Bundle op = new Bundle();
 
                 TextView res = new TextView(PrinceUberlaker.this);
@@ -191,9 +197,11 @@ public class PrinceUberlaker extends AppCompatActivity{
                     edad = ((0.15*lr)+(0.29*((p * 100)/lr))+(0.39*((t*100)/lr)))+23.17;
 
                     res.setText(""+edad);
+                    sexo.setText("Masculino Blanco");
 
                     op.putString("edad",  res.getText().toString());
-                    Intent i = new Intent(this, Dientes.class);
+                    op.putString("sexo", sexo.getText().toString());
+                    Intent i = new Intent(this, DatosPersonaEdadPU.class);
                     i.putExtras(op);
                     startActivity(i);
                     finish();
@@ -218,6 +226,7 @@ public class PrinceUberlaker extends AppCompatActivity{
             }
             if(lista.getSelectedItemPosition() == 2)
             {
+
                 Bundle op = new Bundle();
 
                 TextView res = new TextView(PrinceUberlaker.this);
@@ -227,9 +236,11 @@ public class PrinceUberlaker extends AppCompatActivity{
                     edad = ((1.10*lr)+(0.31*((p * 100)/lr))+(0.39*((t * 100)/lr)))+11.82;
 
                     res.setText(""+edad);
+                    sexo.setText("Femenino Blanca");
 
                     op.putString("edad",  res.getText().toString());
-                    Intent i = new Intent(this, Dientes.class);
+                    op.putString("sexo", sexo.getText().toString());
+                    Intent i = new Intent(this, DatosPersonaEdadPU.class);
                     i.putExtras(op);
                     startActivity(i);
                     finish();

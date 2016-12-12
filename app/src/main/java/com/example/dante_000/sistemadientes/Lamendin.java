@@ -31,6 +31,7 @@ public class Lamendin extends AppCompatActivity {
     private String Mensaje;
     private String Titulo;
     private String Aceptar;
+    private String Cancelar;
 
     FloatingActionButton menu, info, portal;
     Animation Fopen, FCloc, FRot, FRotan;
@@ -114,48 +115,112 @@ public class Lamendin extends AppCompatActivity {
     }
 
     public void boton(View v) {
-        try {
-            double p = Double.parseDouble(P.getText().toString());
-            double t = Double.parseDouble(T.getText().toString());
-            double lr = Double.parseDouble(Lr.getText().toString());
 
-            Bundle op = new Bundle();
+        Titulo = "Procedimiento";
+        Aceptar = "Aceptar";
+        Cancelar = "Cancelar";
+        Mensaje = "Deseas estimar el sexo o no";
 
-            TextView res = new TextView(Lamendin.this);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false)
 
-            if (p < 100 && t < 100&& lr < 100) {
-                edad = ((0.18 *((p * 100)/lr )) + (0.42 *((t * 100)/lr)) + 25.23);
+                .setPositiveButton(Aceptar, new DialogInterface.OnClickListener() {
 
-                res.setText(""+edad);
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+                try {
+                    double p = Double.parseDouble(P.getText().toString());
+                    double t = Double.parseDouble(T.getText().toString());
+                    double lr = Double.parseDouble(Lr.getText().toString());
 
-                op.putString("edad",  res.getText().toString());
-                Intent i = new Intent(this, Dientes.class);
-                i.putExtras(op);
-                startActivity(i);
-                finish();
+                    Bundle op = new Bundle();
+
+                    TextView res = new TextView(Lamendin.this);
+
+                    if (p < 100 && t < 100&& lr < 100) {
+                        edad = ((0.18 *((p * 100)/lr )) + (0.42 *((t * 100)/lr)) + 25.23);
+
+                        res.setText(""+edad);
+
+                        op.putString("edad",  res.getText().toString());
+                        Intent i = new Intent(Lamendin.this, Dientes.class);
+                        i.putExtras(op);
+                        startActivity(i);
+                        finish();
 
 
-            } else {
-                Mensaje = "La longitud de Entrada no es correcta";
-                Titulo = "Longitud Demaciado Grande";
-                Aceptar = "Regresar";
+                    } else {
+                        Mensaje = "La longitud de Entrada no es correcta";
+                        Titulo = "Longitud Demaciado Grande";
+                        Aceptar = "Regresar";
 
-                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(Lamendin.this);
+                        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alert = builder.create();
+                        alert.show();
+                        return;
                     }
-                });
-                AlertDialog alert = builder.create();
-                alert.show();
-                return;
+                }
+                catch (Exception e)
+                {
+                    Toast.makeText(Lamendin.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
+                }
             }
-        }
-        catch (Exception e)
-        {
-            Toast.makeText(this, "Debes de Llenar Todos los Campos",
-                    Toast.LENGTH_LONG).show();
-        }
+        })
+        .setNegativeButton(Cancelar, new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int id){
+                try {
+                    double p = Double.parseDouble(P.getText().toString());
+                    double t = Double.parseDouble(T.getText().toString());
+                    double lr = Double.parseDouble(Lr.getText().toString());
+
+                    Bundle op = new Bundle();
+
+                    TextView res = new TextView(Lamendin.this);
+
+                    if (p < 100 && t < 100&& lr < 100) {
+                        edad = ((0.18 *((p * 100)/lr )) + (0.42 *((t * 100)/lr)) + 25.23);
+
+                        res.setText(""+edad);
+
+                        op.putString("edadE",  res.getText().toString());
+                        Intent i = new Intent(Lamendin.this, DatosPersonaEdad.class);
+                        i.putExtras(op);
+                        startActivity(i);
+                        finish();
+
+
+                    } else {
+                        Mensaje = "La longitud de Entrada no es correcta";
+                        Titulo = "Longitud Demaciado Grande";
+                        Aceptar = "Regresar";
+
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(Lamendin.this);
+                        builder.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alert = builder.create();
+                        alert.show();
+                        return;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Toast.makeText(Lamendin.this, "Debes de Llenar Todos los Campos", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+        return;
     }
 }
