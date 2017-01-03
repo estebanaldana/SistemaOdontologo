@@ -124,7 +124,7 @@ public class Ikeda extends AppCompatActivity{
 
                 /**Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                  .setAction("Action", null).show();**/
-                //startActivity(new Intent(Actividad_Principal.this, iconos.class));
+
 
                 if(open)
                 {
@@ -201,7 +201,7 @@ public class Ikeda extends AppCompatActivity{
                                     res.setText("" + edad);
 
                                     op.putString("edad", res.getText().toString());
-                                    Intent i = new Intent(Ikeda.this, Dientes.class);
+                                    Intent i = new Intent(Ikeda.this, Odontograma.class);
                                     i.putExtras(op);
                                     startActivity(i);
                                     finish();
@@ -241,7 +241,7 @@ public class Ikeda extends AppCompatActivity{
                                     res.setText("" + edad);
 
                                     op.putString("edad", res.getText().toString());
-                                    Intent i = new Intent(Ikeda.this, Dientes.class);
+                                    Intent i = new Intent(Ikeda.this, Odontograma.class);
                                     i.putExtras(op);
                                     startActivity(i);
                                     finish();

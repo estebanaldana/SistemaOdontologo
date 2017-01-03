@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dientes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dante_000.sistemadientes.Dientes"
+    >
+
+
+    <ScrollView
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30px"
+                android:text="Metodo de estimación de sexo"
+                android:textSize="50px"
+                android:textAlignment="center"/>
+
+
+
+
+            //derechasuperior
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:background="@mipmap/d17"
+                android:id="@+id/d17"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="17"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d16"
+                android:id="@+id/d16"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="16"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d15"
+                android:id="@+id/d15"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="15"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d14"
+                android:id="@+id/d14"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="14"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d13"
+                android:id="@+id/d13"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="13"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d12"
+                android:id="@+id/d12"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="12"
+                android:onClick="dientes"/>
+            <CheckBox
+                android:background="@mipmap/d11"
+                android:id="@+id/d11"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="11"
+                android:onClick="dientes"/>
+
+        </LinearLayout>
+
+        //izquierdasuperior
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:background="@mipmap/d21"
+                    android:id="@+id/d21"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="21"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d22"
+                    android:id="@+id/d22"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="22"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d23"
+                    android:id="@+id/d23"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="23"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d24"
+                    android:id="@+id/d24"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="24"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d25"
+                    android:id="@+id/d25"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="25"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d26"
+                    android:id="@+id/d26"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="26"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d27"
+                    android:id="@+id/d27"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="27"
+                    android:onClick="dientes"/>
+
+            </LinearLayout>
+
+            //derechainferior
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:background="@mipmap/d47"
+                    android:id="@+id/d47"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="47"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d46"
+                    android:id="@+id/d46"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="46"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d45"
+                    android:id="@+id/d45"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="45"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d44"
+                    android:id="@+id/d44"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="44"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d43"
+                    android:id="@+id/d43"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="43"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d42"
+                    android:id="@+id/d42"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="42"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d41"
+                    android:id="@+id/d41"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="41"
+                    android:onClick="dientes"/>
+
+            </LinearLayout>
+
+            //izquierdainferior
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:background="@mipmap/d31"
+                    android:id="@+id/d31"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="31"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d32"
+                    android:id="@+id/d32"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="32"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d33"
+                    android:id="@+id/d33"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="33"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d34"
+                    android:id="@+id/d34"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="34"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d35"
+                    android:id="@+id/d35"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="35"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d36"
+                    android:id="@+id/d36"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="36"
+                    android:onClick="dientes"/>
+                <CheckBox
+                    android:background="@mipmap/d37"
+                    android:id="@+id/d37"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="37"
+                    android:onClick="dientes"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_margin="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:layout_gravity="center"
+                android:onClick="aceptar"
+                android:background="@android:color/holo_blue_dark" />
+
+
+        </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+</RelativeLayout>

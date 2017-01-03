@@ -57,6 +57,7 @@
                 android:layout_gravity="center"
                 android:onClick="ikeda"
                 android:background="@android:color/holo_blue_dark" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

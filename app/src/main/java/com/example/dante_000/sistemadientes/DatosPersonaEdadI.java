@@ -123,7 +123,7 @@ public class DatosPersonaEdadI extends AppCompatActivity {
 
                 /**Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                  .setAction("Action", null).show();**/
-                //startActivity(new Intent(Actividad_Principal.this, iconos.class));
+
 
                 if (open) {
                     info.startAnimation(FCloc);

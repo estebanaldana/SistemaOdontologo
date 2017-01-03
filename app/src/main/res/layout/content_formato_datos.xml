@@ -1,0 +1,2307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_datos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dante_000.sistemadientes.DatosFormato"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+            android:id="@+id/Datos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30px"
+            android:text="@string/datodon"
+            android:textSize="50px"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:id="@+id/Edad"
+                    android:text="Edad"
+                    android:layout_margin="5px"
+                    android:paddingLeft="100px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:id="@+id/DatosDentales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30px"
+            android:text="Datos Dentales"
+            android:textSize="50px"
+            android:textAlignment="center"/>
+
+    //---------------Dientes superioes---------------------
+
+    //------------------------Diente 11----------------------
+    <LinearLayout
+        android:id="@+id/E11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Diente 11"
+                android:textAlignment="center"
+                android:textSize="40px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20px">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/d11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/d11md"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-D"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d11vl"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V-L"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d11dvml"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DV-ML"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d11dlmv"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DL-MV"
+            android:textAlignment="center"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //--------------------------------------------------
+
+
+
+
+    //------------------------Diente 12----------------------
+    <LinearLayout
+        android:id="@+id/E12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="Diente 12"
+             android:textAlignment="center"
+             android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/d12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/d12md"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-D"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d12vl"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V-L"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d12dvml"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DV-ML"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d12dlmv"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DL-MV"
+            android:textAlignment="center"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //---------------------------------------------------------
+
+
+
+    //------------------------Diente 13----------------------
+    <LinearLayout
+        android:id="@+id/E13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 13"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/d13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/d13md"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-D"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d13vl"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V-L"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d13dvml"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DV-ML"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d13dlmv"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DL-MV"
+            android:textAlignment="center"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //-----------------------------------------------
+
+
+    //------------------------Diente 14----------------------
+    <LinearLayout
+        android:id="@+id/E14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 14"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/d14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/d14md"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-D"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d14vl"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V-L"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d14dvml"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DV-ML"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/d14dlmv"
+            android:textSize="35px"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DL-MV"
+            android:textAlignment="center"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 15----------------------
+    <LinearLayout
+        android:id="@+id/E15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 15"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d15md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d15vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d15dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d15dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 16----------------------
+    <LinearLayout
+        android:id="@+id/E16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 16"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d16md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d16vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d16dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d16dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 17----------------------
+    <LinearLayout
+        android:id="@+id/E17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 17"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d17md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d17vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d17dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d17dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 21----------------------
+    <LinearLayout
+        android:id="@+id/E21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 21"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d21" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d21md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d21vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d21dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d21dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 22----------------------
+    <LinearLayout
+        android:id="@+id/E22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 22"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d22md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d22vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d22dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d22dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 23----------------------
+    <LinearLayout
+        android:id="@+id/E23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 23"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d23" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d23md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d23vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d23dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d23dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 24----------------------
+    <LinearLayout
+        android:id="@+id/E24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 24"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d24md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d24vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d24dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d24dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 25----------------------
+    <LinearLayout
+        android:id="@+id/E25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 25"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d25md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d25vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d25dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d25dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 26----------------------
+    <LinearLayout
+        android:id="@+id/E26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 26"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d26md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d26vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d26dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d26dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 27----------------------
+    <LinearLayout
+        android:id="@+id/E27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 27"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d27" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d27md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d27vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d27dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d27dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+
+
+    //---------------Dientes inferiores---------------------
+
+    //------------------------Diente 31----------------------
+    <LinearLayout
+        android:id="@+id/E31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 31"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d31" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d31md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d31vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d31dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d31dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //--------------------------------------------------
+
+
+
+
+    //------------------------Diente 32----------------------
+    <LinearLayout
+        android:id="@+id/E32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 32"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d32" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d32md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d32vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d32dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d32dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //---------------------------------------------------------
+
+
+
+    //------------------------Diente 33----------------------
+    <LinearLayout
+        android:id="@+id/E33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 33"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d33" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d33md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d33vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d33dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d33dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //-----------------------------------------------
+
+
+    //------------------------Diente 34----------------------
+    <LinearLayout
+        android:id="@+id/E34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 34"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d34" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d34md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d34vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d34dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d34dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 35----------------------
+    <LinearLayout
+        android:id="@+id/E35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 35"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d35md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d35vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d35dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d35dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 36----------------------
+    <LinearLayout
+        android:id="@+id/E36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 36"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d36md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d36vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d36dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d36dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 37----------------------
+    <LinearLayout
+        android:id="@+id/E37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 37"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d37" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d37md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d37vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d37dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d37dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+
+    //------------------------Diente 41----------------------
+    <LinearLayout
+        android:id="@+id/E41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 41"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d41" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d41md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d41vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d41dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d41dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 42----------------------
+    <LinearLayout
+        android:id="@+id/E42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 42"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d42" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d42md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d42vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d42dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d42dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 43----------------------
+    <LinearLayout
+        android:id="@+id/E43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 43"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d43" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d43md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d43vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d43dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d43dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 44----------------------
+    <LinearLayout
+        android:id="@+id/E44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 44"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d44" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d44md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d44vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d44dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d44dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 45----------------------
+    <LinearLayout
+        android:id="@+id/E45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 45"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d45" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d45md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d45vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d45dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d45dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 46----------------------
+    <LinearLayout
+        android:id="@+id/E46"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 46"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d46" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d46md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d46vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d46dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d46dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+    //------------------------Diente 47----------------------
+    <LinearLayout
+        android:id="@+id/E47"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diente 47"
+            android:textAlignment="center"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20px">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/d47" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/d47md"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M-D"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d47vl"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="V-L"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d47dvml"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DV-ML"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/d47dlmv"
+                    android:textSize="35px"
+                    android:layout_margin="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL-MV"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    //------------------------------------------------------
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="30px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regresar"
+                    android:layout_gravity="left"
+                    android:onClick="boton"
+                    android:background="@android:color/holo_blue_dark" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

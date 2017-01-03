@@ -3,6 +3,7 @@
     <string name="action_settings">Portal UNAM</string>
     <string name="action_acerca">Acerda de</string>
     <string name="action_datos">Generar PDF</string>
+    <string name="action_zoom">ZOOM</string>
 
     <string name="periodontosis">Longitud de la Periodontosis - Milímetros</string>
     <string name="transparencia">Longitud de la Transparencia - Milímetros</string>
@@ -11,4 +12,14 @@
     <string name="IndiceCorona">Indice de la Corona Dental - Milímetros</string>
     <string name="Alturacoronal">Altura Coronal - Milímetros</string>
     <string name="AlturaPulpar">Altura de la Cavidad Pulpar Coronal - Milímetros</string>
+
+    <string name="md">MD</string>
+    <string name="vl">VL</string>
+    <string name="dvml">DV-ML</string>
+    <string name="dlmv">DL-MV</string>
+
+    <string name="estsexo">Identificación de sexo a traves de Medidas Dentales</string>
+    <string name="datodon">Datos Obtenidos</string>
+
+
 </resources>
