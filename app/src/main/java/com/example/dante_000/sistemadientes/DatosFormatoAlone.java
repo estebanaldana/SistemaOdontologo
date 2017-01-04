@@ -27,19 +27,15 @@ import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import org.w3c.dom.Text;
-
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.FileOutputStream;
 import java.text.DecimalFormat;
 
 //import xyz.hanks.library.SmallBang;
 //import xyz.hanks.library.SmallBangListener;
 
-public class DatosFormato extends AppCompatActivity {
-
-    TextView edad;
+public class DatosFormatoAlone extends AppCompatActivity {
 
     LinearLayout d11, d12, d13, d14, d15, d16, d17;
     LinearLayout d21, d22, d23, d24, d25, d26, d27;
@@ -162,7 +158,7 @@ public class DatosFormato extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formato_datos);
+        setContentView(R.layout.activity_formato_datos_alone);
 
         /*-----------------------------LinearLayout--------------------------*/
 
@@ -198,9 +194,6 @@ public class DatosFormato extends AppCompatActivity {
         d46 = (LinearLayout) findViewById(R.id.E46);
         d47 = (LinearLayout) findViewById(R.id.E47);
 
-
-
-        edad = (TextView) findViewById(R.id.Edad);
 
         /*--------------------dientes derechos superiores--------------------*/
         /*-----------------diente 11--------------------*/
@@ -534,7 +527,7 @@ public class DatosFormato extends AppCompatActivity {
 
             porcentaje = (H * 50) / reales;
 
-            Mensaje = "Las aproximaciones estimadas sugieren que es: Hombre";
+            Mensaje = "as aproximaciones estimadas sugieren que es: Hombre";
             Titulo = "Dato";
             Aceptar = "Regresar";
 
@@ -624,7 +617,7 @@ public class DatosFormato extends AppCompatActivity {
         if (id == R.id.action_datos) {
 
             Document Doc = new Document(PageSize.LETTER,20,20,200,100);
-            String outpatch = Environment.getExternalStorageDirectory()+"/DatosOdontologia.pdf";
+            String outpatch = Environment.getExternalStorageDirectory()+"/DatosOdontologiaEstimaciònSexo.pdf";
             PdfPTable table = new PdfPTable(7);
             PdfPTable table2 = new PdfPTable(7);
             PdfPTable table3 = new PdfPTable(7);
@@ -652,7 +645,7 @@ public class DatosFormato extends AppCompatActivity {
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Univerdad Nacional Autonoma de México",fuente), 150,750,0);
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Odontología",fuente), 500,750,0);
 
-                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase(edad.getText().toString(),fuente1), 200,630,0);
+                ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Estimacion de sexo",fuente1), 300,630,0);
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Dientes Derechos Superiores",fuente), 320,600,0);
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Dientes Izquierdos Superiores",fuente), 320,490,0);
                 ColumnText.showTextAligned( writer.getDirectContent(), Element.ALIGN_CENTER, new Phrase("Dientes Izquierdos Inferiores",fuente), 320,380,0);
@@ -1175,12 +1168,6 @@ public class DatosFormato extends AppCompatActivity {
         datoRT = this.getIntent().getExtras();
 
         TextView res = new TextView(this);
-
-
-
-        res.setText("" + datoRT.getString("edadR"));
-        ed = Double.parseDouble(res.getText().toString());
-        edad.setText("Edad: " + decimales.format(ed));
 
         /*-----------------dientes derecha superior--------------*/
         /*------------------diente 11------------------*/

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class Actividad_Principal extends AppCompatActivity {
 
@@ -68,6 +69,11 @@ public class Actividad_Principal extends AppCompatActivity {
             AlertDialog alert = builder.create();
             alert.show();
             return true;
+        }
+        if (id == R.id.action_sexo){
+            Intent i  = new Intent(this, OdontogramaAlone.class);
+            startActivity(i);
+
         }
 
         return super.onOptionsItemSelected(item);

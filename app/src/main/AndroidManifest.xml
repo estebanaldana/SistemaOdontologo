@@ -20,15 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lamendin" android:label="Metodo Lamendin"></activity>
+        <activity android:name=".Lamendin" android:label="Metodo Lamendìn"></activity>
         <activity android:name=".PrinceUberlaker" android:label="Metodo Prince y Uberlaker"></activity>
         <activity android:name=".Ikeda" android:label="Metodo Ikeda"></activity>
         <activity android:name=".DatosPersonaEdad" android:label="Datos"></activity>
         <activity android:name=".DatosPersonaEdadPU" android:label="Datos"></activity>
         <activity android:name=".DatosPersonaEdadI" android:label="Datos"></activity>
         <activity android:name=".Odontograma" android:label="Odontograma"></activity>
-        <activity android:name=".DatosOdontograma" android:label="Odontograma"></activity>
-        <activity android:name=".DatosFormato" android:label="Formato"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+        <activity android:name=".OdontogramaAlone" android:label="Odontograma"></activity>
+        <activity android:name=".DatosOdontograma" android:label="Estimaciòn de Sexo"></activity>
+        <activity android:name=".DatosOdontogramaAlone" android:label="Estimaciòn de Sexo"></activity>
+        <activity android:name=".DatosFormato" android:label="Formato"></activity>
+        <activity android:name=".DatosFormatoAlone" android:label="Formato"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
             android:name="com.google.android.gms.version"

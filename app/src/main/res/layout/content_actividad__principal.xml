@@ -28,13 +28,13 @@
                 android:layout_gravity="center"
                 android:layout_margin="30px"
                 android:textSize="40px"
-                android:text="LA IDENTIFICACIÓN DE SEXO Y ESTIMACIÓN DE EDAD A TRAVÉS DE MEDIDAS DENTALES"
+                android:text="@string/app_tittle"
                 android:textAlignment="center"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lamendin"
+                android:text="Lamendìn"
                 android:layout_margin="40px"
                 android:layout_gravity="center"
                 android:onClick="lamendin"

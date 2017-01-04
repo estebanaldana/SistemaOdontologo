@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">Odontología</string>
+    <string name="app_tittle">APLICACIÒN PARA LA IDENTIFICACIÓN DE SEXO Y ESTIMACIÓN DE EDAD A TRAVÉS DE MEDIDAS DENTALES</string>
     <string name="action_settings">Portal UNAM</string>
     <string name="action_acerca">Acerda de</string>
     <string name="action_datos">Generar PDF</string>
-    <string name="action_zoom">ZOOM</string>
 
     <string name="periodontosis">Longitud de la Periodontosis - Milímetros</string>
     <string name="transparencia">Longitud de la Transparencia - Milímetros</string>
     <string name="raiz">Longitud de la Raíz - Milímetros</string>
 
-    <string name="IndiceCorona">Indice de la Corona Dental - Milímetros</string>
-    <string name="Alturacoronal">Altura Coronal - Milímetros</string>
-    <string name="AlturaPulpar">Altura de la Cavidad Pulpar Coronal - Milímetros</string>
+    <string name="IndiceCorona">TCI(Indice de la Corona Dental) - Milímetros</string>
+    <string name="Alturacoronal">CH(Altura Coronal) - Milímetros</string>
+    <string name="AlturaPulpar">CPCH(Altura de la Cavidad Pulpar Coronal) - Milímetros</string>
 
     <string name="md">MD</string>
     <string name="vl">VL</string>

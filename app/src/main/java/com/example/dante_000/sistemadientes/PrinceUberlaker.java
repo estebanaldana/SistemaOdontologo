@@ -36,7 +36,7 @@ public class PrinceUberlaker extends AppCompatActivity{
     Button cal;
 
     Spinner lista;
-    String datos[] = {"Tipo de Persona", "Edad Estimada Masculino", "Edad Estimado Femenino"};
+    String datos[] = {"Sexo", "Edad Estimada Masculino", "Edad Estimado Femenino"};
 
     double edad;
     DecimalFormat decimales = new DecimalFormat("0.00");

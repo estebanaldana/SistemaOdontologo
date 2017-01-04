@@ -33,7 +33,7 @@ public class Ikeda extends AppCompatActivity{
     Button cal;
 
     Spinner lista;
-    String datos[] = {"Cuenta con el TCI", "SI", "NO"};
+    String datos[] = {"Cuenta con el TCI(Indice de la Corona Dental)", "SI", "NO"};
 
     double edad;
     double TCI;

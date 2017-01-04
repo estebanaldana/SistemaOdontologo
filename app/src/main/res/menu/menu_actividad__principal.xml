@@ -15,4 +15,9 @@
         android:title="@string/action_acerca"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_sexo"
+        android:orderInCategory="100"
+        android:title="App de Estimaciòn de Sexo"
+        app:showAsAction="never" />
 </menu>

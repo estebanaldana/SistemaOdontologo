@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:background="@android:color/white">
 
-    <include layout="@layout/content_formato_datos"/>
+    <include layout="@layout/content_formato_datos_alone"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/menu"

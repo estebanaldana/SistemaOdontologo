@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Odontograma extends AppCompatActivity {
+public class OdontogramaAlone extends AppCompatActivity {
 
     CheckBox d11, d12, d13, d14, d15, d16, d17;
     CheckBox d21, d22, d23, d24, d25, d26, d27;
@@ -34,7 +34,7 @@ public class Odontograma extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_odontograma);
+        setContentView(R.layout.activity_odontograma_alone);
 
         d11 = (CheckBox) findViewById(R.id.d11);
         d12 = (CheckBox) findViewById(R.id.d12);
@@ -70,33 +70,6 @@ public class Odontograma extends AppCompatActivity {
 
 
 
-        try {
-            Bundle datoR = this.getIntent().getExtras();
-            TextView i = new TextView(this);
-
-            i.setText(datoR.getString("edad"));
-            dato.putString("edadR", i.getText().toString());
-
-
-
-        } catch (Exception e) {
-            Mensaje = "A Ocurrido un Error Porfavor Vuelve a Ingresar los Datos";
-            Titulo = "Error";
-            Aceptar = "Aceptar";
-
-            final AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage(Mensaje).setTitle(Titulo).setCancelable(false).setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int id) {
-                    finish();
-                    dialog.cancel();
-                }
-            });
-            AlertDialog alert1 = builder1.create();
-            alert1.show();
-            return;
-        }
-
         Mensaje = "Este es un Odontrogrma para que selecciones los dientes que necesitas";
         Titulo = "Odontograma";
         Aceptar = "Aceptar";
@@ -106,37 +79,37 @@ public class Odontograma extends AppCompatActivity {
                 .setNeutralButton(Aceptar, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
-                i11 = new TextView(Odontograma.this);
-                i12 = new TextView(Odontograma.this);
-                i13 = new TextView(Odontograma.this);
-                i14 = new TextView(Odontograma.this);
-                i15 = new TextView(Odontograma.this);
-                i16 = new TextView(Odontograma.this);
-                i17 = new TextView(Odontograma.this);
+                i11 = new TextView(OdontogramaAlone.this);
+                i12 = new TextView(OdontogramaAlone.this);
+                i13 = new TextView(OdontogramaAlone.this);
+                i14 = new TextView(OdontogramaAlone.this);
+                i15 = new TextView(OdontogramaAlone.this);
+                i16 = new TextView(OdontogramaAlone.this);
+                i17 = new TextView(OdontogramaAlone.this);
                 /*---------------------------------------*/
-                i21 = new TextView(Odontograma.this);
-                i22 = new TextView(Odontograma.this);
-                i23 = new TextView(Odontograma.this);
-                i24 = new TextView(Odontograma.this);
-                i25 = new TextView(Odontograma.this);
-                i26 = new TextView(Odontograma.this);
-                i27 = new TextView(Odontograma.this);
+                i21 = new TextView(OdontogramaAlone.this);
+                i22 = new TextView(OdontogramaAlone.this);
+                i23 = new TextView(OdontogramaAlone.this);
+                i24 = new TextView(OdontogramaAlone.this);
+                i25 = new TextView(OdontogramaAlone.this);
+                i26 = new TextView(OdontogramaAlone.this);
+                i27 = new TextView(OdontogramaAlone.this);
                 /*---------------------------------------*/
-                i31 = new TextView(Odontograma.this);
-                i32 = new TextView(Odontograma.this);
-                i33 = new TextView(Odontograma.this);
-                i34 = new TextView(Odontograma.this);
-                i35 = new TextView(Odontograma.this);
-                i36 = new TextView(Odontograma.this);
-                i37 = new TextView(Odontograma.this);
+                i31 = new TextView(OdontogramaAlone.this);
+                i32 = new TextView(OdontogramaAlone.this);
+                i33 = new TextView(OdontogramaAlone.this);
+                i34 = new TextView(OdontogramaAlone.this);
+                i35 = new TextView(OdontogramaAlone.this);
+                i36 = new TextView(OdontogramaAlone.this);
+                i37 = new TextView(OdontogramaAlone.this);
                 /*---------------------------------------*/
-                i41 = new TextView(Odontograma.this);
-                i42 = new TextView(Odontograma.this);
-                i43 = new TextView(Odontograma.this);
-                i44 = new TextView(Odontograma.this);
-                i45 = new TextView(Odontograma.this);
-                i46 = new TextView(Odontograma.this);
-                i47 = new TextView(Odontograma.this);
+                i41 = new TextView(OdontogramaAlone.this);
+                i42 = new TextView(OdontogramaAlone.this);
+                i43 = new TextView(OdontogramaAlone.this);
+                i44 = new TextView(OdontogramaAlone.this);
+                i45 = new TextView(OdontogramaAlone.this);
+                i46 = new TextView(OdontogramaAlone.this);
+                i47 = new TextView(OdontogramaAlone.this);
                 /*---------------------------------------*/
 
                 i11.setText("0");
@@ -549,7 +522,7 @@ public class Odontograma extends AppCompatActivity {
     public void aceptar(View view){
 
 
-        Intent in = new Intent(this, DatosOdontograma.class);
+        Intent in = new Intent(this, DatosOdontogramaAlone.class);
         in.putExtras(dato);
         startActivity(in);
         finish();

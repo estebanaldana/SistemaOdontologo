@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dientes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dante_000.sistemadientes.DatosOdontogramaAlone"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30px"
+                android:text="@string/estsexo"
+                android:textSize="50px"
+                android:textAlignment="center"/>
+
+            //diente 11
+
+            <LinearLayout
+                android:id="@+id/E11"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 11"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d11md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d11vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d11dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d11dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 12
+
+            <LinearLayout
+                android:id="@+id/E12"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 12"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d12md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d12vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d12dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d12dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 13
+
+            <LinearLayout
+                android:id="@+id/E13"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 13"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d13md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d13vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d13dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d13dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 14
+
+            <LinearLayout
+                android:id="@+id/E14"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 14"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d14md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d14vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d14dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d14dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 15
+
+            <LinearLayout
+                android:id="@+id/E15"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 15"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d15md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d15vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d15dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d15dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 16
+
+            <LinearLayout
+                android:id="@+id/E16"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 16"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d16md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d16vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d16dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d16dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 17
+
+            <LinearLayout
+                android:id="@+id/E17"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 17"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d17md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d17vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d17dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d17dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            //----------------------------------------------------------------------------
+
+
+            //diente 21
+
+            <LinearLayout
+                android:id="@+id/E21"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 21"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d21md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d21vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d21dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d21dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 22
+
+            <LinearLayout
+                android:id="@+id/E22"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 22"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d22md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d22vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d22dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d22dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 23
+
+            <LinearLayout
+                android:id="@+id/E23"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 23"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d23md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d23vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d23dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d23dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 24
+
+            <LinearLayout
+                android:id="@+id/E24"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 24"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d24md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d24vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d24dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d24dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 25
+
+            <LinearLayout
+                android:id="@+id/E25"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 25"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d25md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d25vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d25dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d25dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 26
+
+            <LinearLayout
+                android:id="@+id/E26"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 26"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d26md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d26vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d26dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d26dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 27
+
+            <LinearLayout
+                android:id="@+id/E27"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 27"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d27md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d27vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d27dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d27dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            //----------------------------------------------------------------------------
+
+
+            //diente 31
+
+            <LinearLayout
+                android:id="@+id/E31"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 31"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d31md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d31vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d31dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d31dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 32
+
+            <LinearLayout
+                android:id="@+id/E32"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 32"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d32md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d32vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d32dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d32dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 33
+
+            <LinearLayout
+                android:id="@+id/E33"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 33"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d33md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d33vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d33dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d33dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 34
+
+            <LinearLayout
+                android:id="@+id/E34"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 34"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d34md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d34vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d34dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d34dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 35
+
+            <LinearLayout
+                android:id="@+id/E35"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 35"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d35md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d35vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d35dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d35dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 36
+
+            <LinearLayout
+                android:id="@+id/E36"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 36"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d36md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d36vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d36dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d36dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 37
+
+            <LinearLayout
+                android:id="@+id/E37"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 37"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d37md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d37vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d37dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d37dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            //----------------------------------------------------------------------------
+
+
+            //diente 41
+
+            <LinearLayout
+                android:id="@+id/E41"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 41"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d41md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d41vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d41dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d41dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 42
+
+            <LinearLayout
+                android:id="@+id/E42"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 42"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d42md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d42vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d42dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d42dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 43
+
+            <LinearLayout
+                android:id="@+id/E43"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 43"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d43md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d43vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d43dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d43dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 44
+
+            <LinearLayout
+                android:id="@+id/E44"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 44"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d44md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d44vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d44dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d44dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 45
+
+            <LinearLayout
+                android:id="@+id/E45"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 45"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d45md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d45vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d45dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d45dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 46
+
+            <LinearLayout
+                android:id="@+id/E46"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 46"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d46md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d46vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d46dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d46dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            //diente 47
+
+            <LinearLayout
+                android:id="@+id/E47"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diente 47"
+                    android:textAlignment="center"
+                    android:layout_margin="30dp"
+                    android:textSize="40px"/>
+
+                <EditText
+                    android:id="@+id/d47md"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/md"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d47vl"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vl"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d47dvml"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dvml"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/d47dlmv"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/dlmv"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_margin="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:layout_gravity="center"
+                android:onClick="aceptar"
+                android:background="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
