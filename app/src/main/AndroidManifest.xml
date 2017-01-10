@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lamendin" android:label="Metodo Lamendìn"></activity>
-        <activity android:name=".PrinceUberlaker" android:label="Metodo Prince y Uberlaker"></activity>
+        <activity android:name=".PrinceUberlaker" android:label="Metodo Prince y Ubelaker"></activity>
         <activity android:name=".Ikeda" android:label="Metodo Ikeda"></activity>
         <activity android:name=".DatosPersonaEdad" android:label="Datos"></activity>
         <activity android:name=".DatosPersonaEdadPU" android:label="Datos"></activity>

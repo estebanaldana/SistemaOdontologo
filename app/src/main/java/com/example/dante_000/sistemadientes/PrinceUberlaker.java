@@ -36,7 +36,7 @@ public class PrinceUberlaker extends AppCompatActivity{
     Button cal;
 
     Spinner lista;
-    String datos[] = {"Sexo", "Edad Estimada Masculino", "Edad Estimado Femenino"};
+    String datos[] = {"Sexo", "Estimar Masculino", "Estimar Femenino"};
 
     double edad;
     DecimalFormat decimales = new DecimalFormat("0.00");
@@ -153,7 +153,7 @@ public class PrinceUberlaker extends AppCompatActivity{
 
     public void info(View V) {
 
-        Titulo = "Método de Prince & Uberlaker";
+        Titulo = "Método de Prince&Ubelaker";
         Aceptar = "Regresar";
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);

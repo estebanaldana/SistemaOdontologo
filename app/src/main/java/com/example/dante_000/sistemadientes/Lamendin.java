@@ -89,7 +89,7 @@ public class Lamendin extends AppCompatActivity {
 
     public void info(View V) {
 
-        Titulo = "Método de Lamendin";
+        Titulo = "Método de Lamendìn";
         Aceptar = "Regresar";
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);

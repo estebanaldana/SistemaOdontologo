@@ -196,6 +196,7 @@
                     android:layout_height="130dp"
                     android:text="44"
                     android:onClick="dientes"/>
+
                 <CheckBox
                     android:background="@mipmap/d43"
                     android:id="@+id/d43"

@@ -97,7 +97,7 @@ public class Odontograma extends AppCompatActivity {
             return;
         }
 
-        Mensaje = "Este es un Odontrogrma para que selecciones los dientes que necesitas";
+        Mensaje = "Este es un Odontrograma para que selecciones los dientes que necesitas";
         Titulo = "Odontograma";
         Aceptar = "Aceptar";
 
